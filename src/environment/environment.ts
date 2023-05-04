@@ -8,7 +8,7 @@ export const socialMedia = {
 export const gitHub = {
     flight:'https://github.com/ShockStan/Flight-Tkt-Booking-Angular',
     cricket:'https://github.com/ShockStan/cricket-api-v1',
-    portfolio:'https://github.com/ShockStan',
+    portfolio:'https://github.com/ShockStan/portfolio',
     spring:'https://github.com/ShockStan/flight-tkt-booking-api',
     thymeleaf:'https://github.com/ShockStan/springboot-thymeleaf-posgresql-PBKDF2',
     python:'https://github.com/ShockStan/Django-OnlineMarkerPlace-SportsEquipment',
@@ -26,7 +26,7 @@ export const youTube = {
 export const links = {
     flight:'',
     cricket:'',
-    portfolio:'',
+    portfolio:'shockstan-arvindh.netlify.app',
     spring:''
 }
 export const projects=[
