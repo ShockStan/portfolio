@@ -1,0 +1,29 @@
+*{
+  overflow: hidden;
+}
+.mbheading{
+  animation: fade-in 2s ease forwards;
+}
+.heading1{
+  animation: move 1s ease-in-out forwards;
+}
+svg{
+  animation: wriggle 2s ease-in-out forwards;
+}
+
+@keyframes fade-in{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes move{
+    from { right: -50% }
+    to { right:50%; transform: translateX(50%); }
+}
+
+@keyframes wriggle{
+    0%{ transform: rotate(0deg) }
+    25%{ transform: rotate(-7deg) }
+    50% { transform: rotate(7deg) }
+    75%{ transform: rotate(-7deg)}
+    100%{ transform: rotate(0deg)}
+}

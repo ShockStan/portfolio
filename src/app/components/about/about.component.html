@@ -1,0 +1,158 @@
+<div class="w-full h-screen bg-[#f2f2f2] dark:bg-[#121212] flex justify-center">
+    <div class="w-full h-full flex justify-center items-center bg-[#f2f2f2] dark:bg-[#121212] bg-[length:100%_40%] lg:bg-[length:35%_50%] bg-repeat dark:bg-[url('/../../assets/bg/pattern-dark.png')] bg-[url('/../../assets/bg/pattern-bg.png')]">
+        <div class="absolute top-[8%] lg:top-[4%] tracking-widest font-gal text-black dark:text-white text-[55px] lg:text-[85px] font-bold p-[10px]">about</div>
+        <div class="lg:hidden w-[91%] h-[60%] relative -top-[3%] text-[12px] overflow-y-auto font-bold text-black dark:text-white">
+                <div class="w-full font-itim">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[70%] min-h-[20px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="px-1">tell about yourself</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-end font-courier">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[20px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="px-1">{{about.bio}}</div>
+                    </div>
+                </div>
+                <div class="w-full font-itim">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[20px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="px-1">are you new to this field?</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-end font-courier">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[20px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="pl-1">{{about.experience}}</div>
+                    </div>
+                </div>
+                <div class="w-full font-itim">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[20px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="px-1 pb-px">what's your educational background?</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-end font-courier">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[20px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="pl-1">Graduated {{about.education.course}} in {{about.education.year}} with
+                            {{about.education.percentage}}</div>
+                    </div>
+                </div>
+                <div class="w-full font-itim">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[70%] min-h-[20px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="px-1">when can you start?</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-end font-courier">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[20px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center mb-1 py-2 rounded-t-xl">
+                        <div class="pl-1">{{about.join}}</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-end font-courier">
+                    <div
+                        class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[40px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center mb-1 py-1 rounded-t-xl">
+                        <div class="rounded-lg w-[95%] h-[35px] bg-[#f1f1f1] text-black flex items-center">
+                            <div class="relative left-[10px] top-[2px] h-[90%] text-[28px]"><fa-icon
+                                    [icon]="pdf"></fa-icon>
+                            </div>
+                            <div class="relative text-[12px] font-bold left-[14px]">Resume-Arvindh.pdf</div>
+                            <div class="relative left-[20px] top-[2px] text-[28px]" (click)="downloadResume()"><fa-icon
+                                    [icon]="download"></fa-icon></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div
+            class="hidden lg:block absolute -z-1 dark:text-gray-400/75 text-[#dcdcdc] -rotate-90 font-sigma -left-[8%] top-[50%] text-[115px] py-[22px]">
+            #about</div>
+        <div class="lg:block hidden w-[500px] h-[550px] relative -left-[15%] top-[10%] text-[15px] overflow-y-auto font-bold text-black dark:text-white">
+            <div class="w-full font-itim">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[70%]  min-h-[45px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center m-2 py-2 rounded-t-xl">
+                    <div class="px-1 leading-[30px]">tell about yourself</div>
+                </div>
+            </div>
+            <div class="w-full flex justify-end font-courier">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[45px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center m-2 py-2 rounded-t-xl">
+                    <div class="px-1">{{about.bio}}</div>
+                </div>
+            </div>
+            <div class="w-full font-itim">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[45px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center m-2 py-2 rounded-t-xl">
+                    <div class="px-1 leading-[30px]">are you new to this field?</div>
+                </div>
+            </div>
+            <div class="w-full flex justify-end font-courier">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[45px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center m-2 py-2 rounded-t-xl">
+                    <div class="pl-1">{{about.experience}}</div>
+                </div>
+            </div>
+            <div class="w-full font-itim">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[45px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center m-2 py-2 rounded-t-xl">
+                    <div class="px-1 pb-px leading-[30px]">what's your educational background?</div>
+                </div>
+            </div>
+            <div class="w-full flex justify-end font-courier">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[45px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-center items-center m-2 py-2 rounded-t-xl">
+                    <div class="pl-1">Graduated {{about.education.course}} in {{about.education.year}} with
+                        {{about.education.percentage}}</div>
+                </div>
+            </div>
+            <div class="w-full font-itim">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[70%] min-h-[45px] max-w-[412px] bg-white pl-[5px] rounded-e-xl text-left tracking-[2px] justify-center items-center m-2 py-2 rounded-t-xl">
+                    <div class="px-1 leading-[30px]">when can you start?</div>
+                </div>
+            </div>
+            <div class="w-full flex justify-end font-courier">
+                <div
+                    class="border-2 border-[#121212] dark:bg-[#525252] w-[90%] min-h-[45px] max-w-[412px] bg-white flex flex-wrap pl-[5px] rounded-s-xl text-left tracking-[2px] justify-start items-center m-2 py-2 rounded-t-xl">
+                    <div class="pl-1">{{about.join}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:block hidden absolute top-[40%] right-[20%]">
+            <div class="dark:hidden">
+                <svg width="130" height="50" viewBox="0 0 130 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="resume" d="M2.99067 7.98956C14.7463 4.95736 26.0159 1.94785 38.2447 2.78789C53.0399 3.80421 67.6138 8.19024 80.648 15.1373C91.8394 21.1021 100.489 29.4266 109.635 37.7866C112.018 39.9646 114.837 43.7073 117.439 45.384C119.493 46.7079 116.749 46.4807 115.637 46.4206C110.127 46.1229 104.622 45.8997 99.1793 44.9283C95.5344 44.2778 96.5631 44.4982 99.836 44.8426C105.796 45.4696 111.891 45.4791 117.785 46.6246C134.933 49.9579 123.65 19.4654 125.183 11.5797" stroke="black" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="hidden dark:block">
+                <svg width="130" height="50" viewBox="0 0 130 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="resume" d="M2.99067 7.98956C14.7463 4.95736 26.0159 1.94785 38.2447 2.78789C53.0399 3.80421 67.6138 8.19024 80.648 15.1373C91.8394 21.1021 100.489 29.4266 109.635 37.7866C112.018 39.9646 114.837 43.7073 117.439 45.384C119.493 46.7079 116.749 46.4807 115.637 46.4206C110.127 46.1229 104.622 45.8997 99.1793 44.9283C95.5344 44.2778 96.5631 44.4982 99.836 44.8426C105.796 45.4696 111.891 45.4791 117.785 46.6246C134.933 49.9579 123.65 19.4654 125.183 11.5797" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                </svg>                                     
+            </div>
+        </div>
+        
+        <div class="lg:block hidden relative text-black dark:text-white font-courier text-[20px] text-center dark:font-bold -top-[4%] left-[7%]"><p>download</p></div>
+        <div class="lg:block hidden rounded-2xl w-[412px] h-[100px] dark:bg-[#525252] bg-[#f1f1f1] absolute border-2 border-black flex justify-center items-center right-[15%] top-1/2">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl w-[95%] h-[80%] bg-[#f1f1f1] flex items-center justify-evenly flex-row">
+                <div class="relative text-[40px]"><fa-icon [icon]="pdf"></fa-icon>
+                </div>
+                <div class="relative text-[20px] font-bold">Resume-Arvindh.pdf</div>
+                <div class="relative text-[40px]" (click)="downloadResume()"><fa-icon [icon]="download"></fa-icon></div>
+            </div>
+        </div>
+        <div class="lg:block hidden relative text-black dark:text-white font-courier text-[20px] text-center dark:font-bold top-[33%] left-[3.5%]"><p>reach out</p>to me</div>
+        <div class="hidden lg:block absolute right-[7%] top-[65%] rotate-[20deg]">
+            <div class="dark:hidden">
+            <svg width="208" height="163" viewBox="0 0 208 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="arr" d="M2.90134 160.839C34.2677 150.197 81.8899 135.174 85.5579 95.9937C87.1808 78.6584 81.9251 53.3271 66.7723 42.42C53.9767 33.2096 41.1336 43.8623 44.0209 58.2138C48.3181 79.5736 66.067 103.52 85.2796 113.736C113.683 128.838 144.712 110.356 159.448 85.4181C171.181 65.5624 178 40.7236 179.903 17.79C180.516 10.4059 180.291 6.57211 174.198 12.0848C170.073 15.817 164.496 24.6331 158.891 25.6521C156.26 26.1306 168.867 16.9627 170.997 15.007C175.91 10.4967 181.45 -0.648816 188.461 4.0835C195.096 8.5621 199.262 16.2237 205.786 20.5731" stroke="black" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            </div>
+            <div class="dark:block hidden">
+                <svg width="208" height="163" viewBox="0 0 208 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arr" d="M2.90134 160.839C34.2677 150.197 81.8899 135.174 85.5579 95.9937C87.1808 78.6584 81.9251 53.3271 66.7723 42.42C53.9767 33.2096 41.1336 43.8623 44.0209 58.2138C48.3181 79.5736 66.067 103.52 85.2796 113.736C113.683 128.838 144.712 110.356 159.448 85.4181C171.181 65.5624 178 40.7236 179.903 17.79C180.516 10.4059 180.291 6.57211 174.198 12.0848C170.073 15.817 164.496 24.6331 158.891 25.6521C156.26 26.1306 168.867 16.9627 170.997 15.007C175.91 10.4967 181.45 -0.648816 188.461 4.0835C195.096 8.5621 199.262 16.2237 205.786 20.5731" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>

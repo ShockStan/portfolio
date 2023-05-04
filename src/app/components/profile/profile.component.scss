@@ -1,0 +1,44 @@
+#type{
+    line-height: 50px;
+}
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    16.66%{transform: rotate(60deg);}
+    33.22%{transform: rotate(120deg);}
+    50%{transform: rotate(180deg);}
+    66.66%{transform: rotate(240deg);}
+    83.22%{transform: rotate(300deg);}
+    100%{transform: rotate(360deg);}   
+}
+.spin{
+    top: calc(50% - 130px) !important;
+    animation: spin 12s infinite ease-out;
+}
+.spin-lg{
+    top: calc(50% - 230px) !important;
+    animation: spin 12s infinite ease-out;
+}
+.write{
+    stroke-dasharray: 160.33;
+    stroke-dashoffset: 160.33;
+    transition: stroke-dashoffset 3s ease;
+    animation-delay: 4s;
+    animation: draw1 5s ease infinite;
+}
+.projects{
+    stroke-dasharray: 458.88;
+    stroke-dashoffset: 458.88;
+    transition: stroke-dashoffset 3s ease;
+    animation-delay: 4s;
+    animation: draw 5s ease infinite;
+}
+@keyframes draw{
+    to{
+        stroke-dashoffset: 40;
+    }
+}
+@keyframes draw1{
+    to{
+        stroke-dashoffset: 0;
+    }
+}

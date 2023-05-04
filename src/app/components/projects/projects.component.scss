@@ -1,0 +1,23 @@
+*{
+    overflow-x: hidden;
+}
+.op:hover{
+    
+background: linear-gradient(rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.9) 70%);
+}
+@media only screen and (max-width: 1023px) {
+   .op{
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.9) 70%);
+    }
+    ::-webkit-scrollbar {
+        display: none;
+      }
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10%;
+    border: 2px solid black;
+  }

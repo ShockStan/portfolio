@@ -1,0 +1,96 @@
+<div class="w-full h-screen bg-[#f2f2f2] dark:bg-[#121212] flex justify-center">
+    <div class="w-full h-full flex justify-center bg-[#f2f2f2] dark:bg-[#121212]">
+        <div
+            class="hidden lg:block absolute -z-1 dark:text-gray-400/25 text-[#dcdcdc] -rotate-90 font-sigma -left-[14%] top-[42%] text-[115px] py-[22px]">
+            #projects</div>
+        <div
+            class="absolute top-[10%] lg:top-[15%] tracking-widest font-gal text-black dark:text-white text-[55px] lg:text-[85px] font-bold p-[10px]">
+            projects</div>
+        <div
+            class="scale-y-100 lg:scale-x-100 relative top-[22%] lg:top-[35%] w-[61%] min-w-[302px] h-[55%] lg:h-[70%] overflow-y-scroll overflow-x-hidden flex flex-wrap rounded-2xl">
+            <div class="h-[299px] w-full lg:w-[300px] flex justify-center my-1 mx-1 items-center rounded-2xl bg-gray-400 dark:bg-[#1f1f1f]"
+                *ngFor="let project of projects;let i=index" id="{{i+1}}" #loop matRipple (click)="openInfo(loop);openSideInfo(loop)"
+                [matRippleColor]="'rgba(211,211,211,0.4)'">
+                <div class="h-[270px] w-[90%] bg-blend-normal no-repeat cover rounded-2xl"
+                    style="background-image: url('../../../assets/projects/{{project.image}}');background-repeat:no-repeat;background-size:cover;">
+                    <div class="h-full w-full bg-transparent opacity-100 group op flex items-end">
+                        <div
+                            class="text-[#e1e1e1] lg:invisible lg:group-hover:visible w-full relative bottom-[10px] left-[10px]">
+                            <p class="font-medium font-antique leading-4 text-[18px] pb-2">{{project.name}}</p>
+                            <div class="flex flex-wrap"><span class="font-courier">{{project.caption}}</span></div>
+                            <div class="w-full flex flex-row flex-wrap my-2">
+                                <div class="bg-[#696869] p-1 text-[11px] rounded-xl w-min mr-2 mt-2"
+                                    *ngFor="let tech of project.tech">
+                                    <span class="p-2 font-itim font-bold">{{tech}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block mt-4 w-[88%] lg:w-[96%] h-[50px] lg:h-[100px] relative left-[6%] lg:left-[2%]">
+            </div>
+        </div>
+        <div
+            class="hidden lg:block absolute -z-1 dark:text-gray-400/25 text-[#dcdcdc] font-sigma left-[77%] top-[22%] text-[55px] py-[22px] -rotate-90">
+            #angular</div>
+        <div
+            class="hidden lg:block absolute -z-1 dark:text-gray-400/25 text-[#dcdcdc] font-sigma left-[78%] top-[60%] text-[55px] py-[22px] -rotate-90">
+            #java</div>
+        <div
+            class="hidden lg:block absolute -z-1 dark:text-gray-400/25 text-[#dcdcdc] font-sigma left-[80%] top-[62%] text-[55px] py-[22px] -rotate-90">
+            #python</div>
+        <p class="top-[98%] left-[5px] absolute text-[12px] font-courier text-black dark:text-white">*Illustrations'
+            source: FreePik</p>
+        <div #info
+            class="lg:hidden border-t-4 border-t-black dark:border-t-[#f1f1f1] z-[80] absolute bottom-0 translate-y-full w-full h-[70%] flex items-center justify-center bg-gray-400 dark:bg-[#1f1f1f]">
+            <div class="rounded-2xl w-[90%] bg-gray-300 h-[90%] flex justify-start flex-col">
+                <div class="w-full h-min"><img src="../../../assets/projects/{{modal.image}}"
+                        class="rounded-2xl w-full relative -top-[34%]" /></div>
+                <div class="w-full h-[90%] flex justify-evenly flex-col text-black">
+                    <div class="ml-[10px] py-2 font-antique text-[20px]">{{modal.name}}</div>
+                    <div class="ml-[10px] py-2 font-courier">{{modal.desc}}</div>
+                    <div class="w-full flex flex-row flex-wrap my-px ml-[10px]">
+                        <div class="bg-[#696869] p-1 text-white text-[11px] rounded-xl w-min mr-2 mt-2"
+                            *ngFor="let tech of modal.tech">
+                            <span class="p-1 font-itim font-bold">{{tech}}</span>
+                        </div>
+                    </div>
+                    <div class="mt-[10px] flex flex-row justify-evenly w-full text-[30px] text-black">
+                        <div *ngIf="modal.link"><a href="{{modal.link}}" target="_blank"><fa-icon
+                                    [icon]="url"></fa-icon></a></div>
+                        <div *ngIf="modal.github"><a href="{{modal.github}}" target="_blank"><fa-icon
+                                    [icon]="gitHub"></fa-icon></a></div>
+                        <div *ngIf="modal.youtube"><a href="{{modal.youtube}}" target="_blank"><fa-icon
+                                    [icon]="youTube"></fa-icon></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div #sideInfo
+            class="hidden lg:flex border-l-4 border-l-black dark:border-l-[#f1f1f1] z-[80] absolute right-0 translate-x-full h-full w-[35%] flex items-center justify-center bg-gray-400 dark:bg-[#1f1f1f]">
+            <div class="rounded-2xl w-[90%] bg-gray-300 h-[90%] flex justify-start flex-col">
+                <div class="w-full h-min"><img src="../../../assets/projects/{{modal.image}}"
+                        class="rounded-2xl w-full relative -top-[34%]" /></div>
+                <div class="w-full h-[90%] flex justify-evenly flex-col text-black">
+                    <div class="ml-[10px] py-2 font-antique text-[30px]">{{modal.name}}</div>
+                    <div class="ml-[10px] py-2 font-courier text-[15px]">{{modal.desc}}</div>
+                    <div class="w-full flex flex-row flex-wrap my-px ml-[10px]">
+                        <div class="bg-[#696869] p-1 text-black text-[16px] rounded-xl w-min mr-2 mt-2"
+                            *ngFor="let tech of modal.tech">
+                            <span class="p-1 font-itim font-bold text-white">{{tech}}</span>
+                        </div>
+                    </div>
+                    <div class="mt-[10px] flex flex-row justify-evenly w-full text-[30px] text-black">
+                        <div *ngIf="modal.link"><a href="{{modal.link}}" target="_blank"><fa-icon
+                                    [icon]="url"></fa-icon></a></div>
+                        <div *ngIf="modal.github"><a href="{{modal.github}}" target="_blank"><fa-icon
+                                    [icon]="gitHub"></fa-icon></a></div>
+                        <div *ngIf="modal.youtube"><a href="{{modal.youtube}}" target="_blank"><fa-icon
+                                    [icon]="youTube"></fa-icon></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
