@@ -1,7 +1,7 @@
 export const socialMedia = {
     twitter:'https://twitter.com/overbowlershead',
     instagram:'https://instagram.com/arvindh_adiya?igshid=ZDdkNTZiNTM=',
-    linkedin:'https://www.linkedin.com/in/arvindh-km-1b12531b5',
+    linkedin:'https://www.linkedin.com/in/arvindhKM',
     github:'https://github.com/ShockStan',
     email:'aaaeroa@gmail.com'
 }
