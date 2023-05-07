@@ -28,7 +28,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/environment"
+              "src/environment",
+              "src/_redirects"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -93,7 +94,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/environment"
+              "src/environment",
+              "src/_redirects"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
