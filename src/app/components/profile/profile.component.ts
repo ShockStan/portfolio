@@ -13,7 +13,7 @@ export class ProfileComponent  implements OnInit {
   ngOnInit(): void {
     this.service.sethighLight('profile');
   }
-  typewrite = ['Full_Stack_Developer','Angular_Developer','Java_Developer','Python_Developer'];
+  typewrite = ['Full_Stack_Developer','MEAN Stack Developer','Angular_Developer','Java_Developer','NodeJS_Developer'];
  
   
  }
