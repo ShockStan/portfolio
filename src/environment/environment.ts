@@ -13,7 +13,8 @@ export const gitHub = {
     thymeleaf:'https://github.com/ShockStan/springboot-thymeleaf-posgresql-PBKDF2',
     python:'https://github.com/ShockStan/Django-OnlineMarkerPlace-SportsEquipment',
     swing:'https://github.com/ShockStan/TicTacToe-Bingo-JavaSwing',
-    c:'https://github.com/ShockStan/Find-replace-a-word-in-all-files-in-a-directory'
+    c:'https://github.com/ShockStan/Find-replace-a-word-in-all-files-in-a-directory',
+    demo:'https://github.com/ShockStan/company-website-demo'
 }
 export const youTube = {
     flight:'https://www.youtube.com/watch?v=yyW23LwwSnQ',
@@ -21,12 +22,13 @@ export const youTube = {
     portfolio:'',
     thymeleaf:'https://www.youtube.com/watch?v=6wE-SZE0eT8',
     python:'https://www.youtube.com/watch?v=Bz2XkhYT4bk',
-    swing:'https://www.youtube.com/watch?v=GJ2tBSXKiGQ'
+    swing:'https://www.youtube.com/watch?v=GJ2tBSXKiGQ',
+    demo:'https://youtu.be/aTZy5L6QtVU'
 }
 export const links = {
     flight:'',
     cricket:'',
-    portfolio:'shockstan-arvindh.netlify.app',
+    portfolio:'https://shockstan-arvindh.netlify.app',
     spring:''
 }
 export const projects=[
@@ -81,6 +83,14 @@ export const projects=[
     github: gitHub.python,
     youtube:youTube.python,
     image:'python.svg'
+  },{
+    name:'Showcase',
+    tech:['Angular','TailwindCSS'],
+    caption:'Demo website',
+    desc:'A basic demo website for tour planning company, made using Angular',
+    github:gitHub.demo,
+    youtube:youTube.demo,
+    image:'website-demo.svg'
   },{
     name:'Tic-Tac-Toe & Bingo',
     tech:['Java'],

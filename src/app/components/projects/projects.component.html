@@ -1,5 +1,5 @@
 <div class="w-full h-screen bg-[#f2f2f2] dark:bg-[#121212] flex justify-center">
-    <div class="w-full h-full flex justify-center bg-[#f2f2f2] dark:bg-[#121212]">
+    <div class="w-full h-full flex justify-center bg-[#f2f2f2] dark:bg-[#121212] overflow-x-hidden">
         <div
             class="hidden lg:block absolute -z-1 dark:text-gray-400/25 text-[#dcdcdc] -rotate-90 font-sigma -left-[14%] top-[42%] text-[115px] py-[22px]">
             #projects</div>
@@ -70,9 +70,9 @@
                 </div>
             </div>
         </div>
-        <div #sideInfo
+        <div #sideInfo 
             class="hidden lg:flex border-l-4 border-l-black dark:border-l-[#f1f1f1] z-[80] absolute right-0 translate-x-full h-full w-[35%] flex items-center justify-center bg-gray-400 dark:bg-[#1f1f1f]">
-            <div class="rounded-2xl w-[90%] bg-gray-300 h-[90%] flex justify-start flex-col">
+            <div #sideIn class="rounded-2xl w-[90%] bg-gray-300 h-[90%] flex justify-start flex-col">
                 <div class="w-full h-min"><img src="../../../assets/projects/{{modal.image}}"
                         class="rounded-2xl w-full relative -top-[34%]" /></div>
                 <div class="w-full h-[90%] flex justify-evenly flex-col text-black">
