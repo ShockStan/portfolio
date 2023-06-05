@@ -47,7 +47,7 @@ export const projects=[
     tech:['NodeJS','GoogleAPI'],
     caption:'Program to send automatic replies to received mails',
     desc: 'NodeJS app made with Google Gmail API, where reply is sent to every new eamil received in inbox and then added to separate label',
-    gitHub:gitHub.email,
+    github:gitHub.email,
     image:'email.svg'
   },{
     name:'Review App',
