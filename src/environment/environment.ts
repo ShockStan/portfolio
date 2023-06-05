@@ -7,6 +7,7 @@ export const socialMedia = {
 }
 export const gitHub = {
     flight:'https://github.com/ShockStan/Flight-Tkt-Booking-Angular',
+    email:'https://github.com/ShockStan/SendMailGmailAPINodeJS',
     cricket:'https://github.com/ShockStan/cricket-api-v1',
     portfolio:'https://github.com/ShockStan/portfolio',
     spring:'https://github.com/ShockStan/flight-tkt-booking-api',
@@ -41,6 +42,13 @@ export const projects=[
     github:gitHub.flight,
     youtube:youTube.flight,
     image:'flight.svg'
+  },{
+    name:'Automatic Email Reply',
+    tech:['NodeJS','GoogleAPI'],
+    caption:'Program to send automatic replies to received mails',
+    desc: 'NodeJS app made with Google Gmail API, where reply is sent to every new eamil received in inbox and then added to separate label',
+    gitHub:gitHub.email,
+    image:'email.svg'
   },{
     name:'Review App',
     tech:['React', 'Java', 'SpringBoot', 'BootStrap', 'MongoDB'],
