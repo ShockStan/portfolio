@@ -27,10 +27,10 @@ export const youTube = {
     demo:'https://youtu.be/aTZy5L6QtVU'
 }
 export const links = {
-    flight:'',
+    flight:'https://tripsterflight.netlify.app',
     cricket:'',
     portfolio:'https://shockstan-arvindh.netlify.app',
-    spring:''
+    spring:'https://flightticket-6dst.onrender.com/flights'
 }
 export const projects=[
     {
