@@ -15,7 +15,9 @@ export const gitHub = {
     python:'https://github.com/ShockStan/Django-OnlineMarkerPlace-SportsEquipment',
     swing:'https://github.com/ShockStan/TicTacToe-Bingo-JavaSwing',
     c:'https://github.com/ShockStan/Find-replace-a-word-in-all-files-in-a-directory',
-    demo:'https://github.com/ShockStan/company-website-demo'
+    demo:'https://github.com/ShockStan/company-website-demo',
+    google:'https://github.com/ShockStan/NestJS_Kafka_GoogleAuth',
+    chatbot:'https://github.com/ShockStan/chatbot'
 }
 export const youTube = {
     flight:'https://www.youtube.com/watch?v=yyW23LwwSnQ',
@@ -30,7 +32,8 @@ export const links = {
     flight:'https://tripsterflight.netlify.app',
     cricket:'',
     portfolio:'https://shockstan-arvindh.netlify.app',
-    spring:'https://flightticket-6dst.onrender.com/flights'
+    spring:'https://flightticket-6dst.onrender.com/flights',
+    chatbot:'https://chatbot.shockstan.vercel.app/'
 }
 export const projects=[
     {
@@ -42,6 +45,21 @@ export const projects=[
     github:gitHub.flight,
     youtube:youTube.flight,
     image:'flight.svg'
+  },{
+    name:'Google Auth - Kafka',
+    tech:[' NestJS ', ' NodeJS ', ' ApacheKafka ', ' PostgreSQL ', ' Docker '],
+    caption:'Google Auth in NestJS',
+    desc:'Google Authentication using PassportJS and Apache Kafka',
+    github:gitHub.google,
+    image:'google.svg'
+  },{
+    name:'AI Chat bot using PaLM',
+    tech:[' Angular ', ' PaLM_API ', ' TailwindCSS '],
+    caption:'AI Chatbot - PaLM API',
+    desc:'Google Bard Clone',
+    link:links.chatbot,
+    github:gitHub.chatbot,
+    image:'chatbot.svg'
   },{
     name:'Automatic Email Reply',
     tech:['NodeJS','GoogleAPI'],
@@ -117,7 +135,7 @@ export const projects=[
   },
 ];
 export const about = {
-  bio:'Hi there, I am Arvindh. A full stack web developer who specialises in aNGular and Java.',
+  bio:'Hi there, I am Arvindh. A full stack web developer who specialises in aNGular, Node, NestJS and Java.',
   experience:'Yes, a 22 year old fresher who graduated college a year back.',
   education:{course:'B.Tech, textile technology',year:'2022',percentage:'83%'},
   join:'Available to start immediately.'
